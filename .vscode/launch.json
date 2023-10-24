@@ -15,7 +15,7 @@
     // "envFile": "${workspaceFolder}/.env",
     "configurations": [
         {
-           
+
             "name": "Debug script with args",
             "type": "python",
             "request": "launch",

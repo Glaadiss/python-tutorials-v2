@@ -5,7 +5,7 @@
             "source.organizeImports": true
         }
     },
-    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.typeCheckingMode": "basic",
     "python.languageServer": "Pylance",
     "python.testing.pytestArgs": [
         "."

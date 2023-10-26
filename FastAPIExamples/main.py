@@ -4,11 +4,13 @@
     3. Dodaj dekorator do endpointu "/" który będzie zliczał ilość wywołań
     More info: https://fastapi.tiangolo.com/#example
 """
+import os
 from typing import Union
 
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+print(os.environ.get("ENV_EXAMPLE"))
 app = FastAPI()
 
 

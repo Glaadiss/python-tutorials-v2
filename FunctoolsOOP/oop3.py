@@ -1,28 +1,28 @@
-from abc import ABC, abstractmethod
+from typing import Protocol, runtime_checkable
 
 
-class Developer(ABC):
-    @abstractmethod
+@runtime_checkable
+class Developer(Protocol):
     def fix_bug(self):
         pass
 
 
-class Senior(Developer):
+class Senior:
     def fix_bug(self):
         print("I don't fix bugs, I debug features.")
 
 
-class Mid(Developer):
+class Mid:
     def fix_bug(self):
         print("I can fix that bug, but I need a coffee first.")
 
 
-class Junior(Developer):
+class Junior:
     def fix_bug(self):
         print("I'm on it! *types furiously*")
 
 
-class HR(Developer):
+class HR:
     def fix_human(self):
         print("I'm fixing humans")
 

@@ -1,4 +1,4 @@
-from .word_finder import WordFinder
+from DebuggerTest.word_finder import WordFinder
 
 
 def test_word_finder():
